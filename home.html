@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CodeCraft Institute</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#e0f2fe,#dbeafe);
+  color:#1e293b;
+  scroll-behavior: smooth;
+}
+.navbar{
+  background:linear-gradient(90deg,#2563eb,#9333ea);
+}
+.navbar .nav-link{color:white;font-weight:500;}
+.navbar .nav-link:hover{color:#facc15;}
+.hero{
+  background:linear-gradient(135deg,#60a5fa,#a78bfa);
+  color:white;
+  padding:100px 0;
+  text-align:center;
+}
+section{padding:80px 0;}
+.course-card{
+  border-radius:20px;
+  padding:25px;
+  color:white;
+  box-shadow:0 15px 30px rgba(0,0,0,0.2);
+  text-align:center;
+  transition:0.3s;
+}
+.course-card:hover{transform: translateY(-8px) scale(1.03);}
+.python{background:#3776ab;}
+.java{background:#ea580c;}
+.iot{background:#059669;}
+.web{background:#7c3aed;}
+.syllabus-card{
+  background:white;
+  border-radius:18px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+.contact-section{background:linear-gradient(135deg,#dbeafe,#fce7f3);}
+.contact-box{
+  background:white;
+  border-radius:20px;
+  padding:35px;
+  box-shadow:0 20px 35px rgba(0,0,0,0.2);
+}
+.form-control::placeholder{color:#64748b;}
+.form-control.error{border-color:#ef4444 !important;}
+.form-control.success{border-color:#22c55e !important;}
+footer{background:#1e293b;color:#cbd5f5;padding:20px 0;}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold" href="#home">CodeCraft Institute</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1 class="fw-bold">Professional Computer Science Education</h1>
+    <p class="lead mt-3">Learn Python, Java, IoT, and Advanced Web Designing</p>
+    <a href="#courses" class="btn btn-warning btn-lg mt-3">Explore Courses</a>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Our Courses</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="course-card python"><h5>Python Programming</h5><p>Ms. Jinal Purohit</p></div></div>
+      <div class="col-md-3"><div class="course-card java"><h5>Java Programming</h5><p>Ms. Ami Belani</p></div></div>
+      <div class="col-md-3"><div class="course-card iot"><h5>Internet of Things</h5><p>Ms. Roshani Koli</p></div></div>
+      <div class="col-md-3"><div class="course-card web"><h5>Advanced Web Designing</h5><p>Ms. Aashi Parikh</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SYLLABUS / ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Syllabus</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="syllabus-card">
+          <h5 class="text-primary">Python Programming</h5>
+          <ul>
+            <li>Basics & Syntax</li>
+            <li>Functions & OOP</li>
+            <li>File Handling & Automation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="syllabus-card">
+          <h5 class="text-warning">Java Programming</h5>
+          <ul>
+            <li>OOP & Classes</li>
+            <li>Collections Framework</li>
+            <li>Exception Handling & JDBC</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="syllabus-card">
+          <h5 class="text-success">Internet of Things</h5>
+          <ul>
+            <li>Arduino & Sensors</li>
+            <li>Cloud Integration</li>
+            <li>Smart Applications</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="syllabus-card">
+          <h5 class="text-purple">Advanced Web Designing</h5>
+          <ul>
+            <li>HTML5, CSS3, Bootstrap</li>
+            <li>JavaScript Basics</li>
+            <li>UI/UX Principles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <div class="contact-box">
+          <form onsubmit="return validateForm()">
+            <input id="name" class="form-control mb-3" placeholder="Full Name">
+            <input id="email" type="email" class="form-control mb-3" placeholder="Email Address">
+            <input id="phone" class="form-control mb-3" placeholder="10 Digit Phone Number" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+            <select id="subject" class="form-control mb-3">
+              <option value="">Choose Subject</option>
+              <option>Python Programming</option>
+              <option>Java Programming</option>
+              <option>Internet of Things</option>
+              <option>Advanced Web Designing</option>
+            </select>
+            <textarea id="message" class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+            <div id="msg" class="fw-bold mt-2"></div>
+            <button class="btn btn-primary w-100 mt-3">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">
+  <p class="mb-0">© 2025 CodeCraft Institute</p>
+</footer>
+
+<script>
+function validateForm(){
+  let name=document.getElementById("name");
+  let email=document.getElementById("email");
+  let phone=document.getElementById("phone");
+  let subject=document.getElementById("subject");
+  let message=document.getElementById("message");
+  let msg=document.getElementById("msg");
+  let emailPattern=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  [name,email,phone,subject,message].forEach(f=>f.classList.remove("error","success"));
+
+  if(name.value.trim()===""){name.classList.add("error"); msg.innerText="⚠ Name required"; return false;}
+  if(!email.value.match(emailPattern)){email.classList.add("error"); msg.innerText="⚠ Enter valid email"; return false;}
+  if(phone.value.length!==10){phone.classList.add("error"); msg.innerText="⚠ Phone must be 10 digits"; return false;}
+  if(subject.value===""){subject.classList.add("error"); msg.innerText="⚠ Please select a subject"; return false;}
+  if(message.value.trim()===""){message.classList.add("error"); msg.innerText="⚠ Message required"; return false;}
+
+  [name,email,phone,subject,message].forEach(f=>f.classList.add("success"));
+  msg.style.color="#22c55e"; msg.innerText="✅ Form submitted successfully!";
+  return false;
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
